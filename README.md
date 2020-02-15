@@ -1,3 +1,3 @@
 # go-projects
 
-Inspired by [Mega Project List](https://github.com/karan/Projects).
+Inspired by [Mega Project List](https://github.com/magmel48/Projects).

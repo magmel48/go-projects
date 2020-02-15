@@ -14,7 +14,7 @@ import (
 var vowels = []string{"a", "o", "e", "i", "u"}
 var pigAddition = "ay"
 
-func isVowel(in string) (out bool) {
+func IsVowel(in string) (out bool) {
 	for _, v := range vowels {
 		if string(in) == v {
 			return true
@@ -42,7 +42,7 @@ func PigLatin() {
 
 	formatted := false
 
-	if isVowel(string(text[0])) {
+	if IsVowel(string(text[0])) {
 		text = text + "-" + pigAddition
 		formatted = true
 	}
@@ -51,7 +51,7 @@ func PigLatin() {
 		consonantsCount := 0
 
 		for _, c := range text {
-			if isVowel(string(c)) {
+			if IsVowel(string(c)) {
 				break
 			}
 
