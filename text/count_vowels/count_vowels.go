@@ -5,21 +5,13 @@ For added complexity have it report a sum of each vowel found.
 package count_vowels
 
 import (
-	"bufio"
 	"fmt"
 	"github.com/magmel48/go-projects/text/pig_latin"
-	"os"
+	"github.com/magmel48/go-projects/utils"
 )
 
 func CountVowels() {
-	reader := bufio.NewReader(os.Stdin)
-	text, err := reader.ReadString('\n')
-
-	if err != nil {
-		panic(err)
-	}
-
-	text = text[:len(text)-1]
+	text := utils.ReadConsole()
 
 	countVowels := 0
 	reportingMap := make(map[string]int)

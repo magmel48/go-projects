@@ -6,9 +6,8 @@ and an ay is affixed (Ex.: "banana" would yield anana-bay). Read Wikipedia for m
 package pig_latin
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	"github.com/magmel48/go-projects/utils"
 )
 
 var vowels = []string{"a", "o", "e", "i", "u"}
@@ -25,19 +24,13 @@ func IsVowel(in string) (out bool) {
 }
 
 func PigLatin() {
-	reader := bufio.NewReader(os.Stdin)
-
 	var text string
-	var err error
 
-	for len(text) == 0 {
-		text, err = reader.ReadString('\n')
-
-		if err != nil {
-			panic(err)
+	for {
+		text = utils.ReadConsole()
+		if len(text) != 0 {
+			break
 		}
-
-		text = text[:len(text)-1]
 	}
 
 	formatted := false

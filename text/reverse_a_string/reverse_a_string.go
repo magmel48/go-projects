@@ -4,9 +4,8 @@ Enter a string and the program will reverse it and print it out.
 package reverse_a_string
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	"github.com/magmel48/go-projects/utils"
 )
 
 func reverse(in string) (out string) {
@@ -18,14 +17,6 @@ func reverse(in string) (out string) {
 }
 
 func ReverseAString() {
-	reader := bufio.NewReader(os.Stdin)
-	text, err := reader.ReadString('\n')
-
-	if err != nil {
-		panic(err)
-	}
-
-	text = text[:len(text)-1]
-
+	text := utils.ReadConsole()
 	fmt.Println(reverse(text))
 }
