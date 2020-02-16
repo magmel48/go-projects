@@ -15,4 +15,5 @@ func main() {
 	//fmt.Println(sorting.BubbleSort([]int{-1, 0, -10, 9, 8, 4, 2, -3, 8}))
 	//fmt.Println(sorting.MergeSort([]int{-1, 0, -10, 9, 8, 4, 2, -3, 8}))
 	//coin_flip_simulation.CoinFlipSimulation()
+	//fast_exponentiation.FastExponentiation()
 }
