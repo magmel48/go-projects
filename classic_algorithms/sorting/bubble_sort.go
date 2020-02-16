@@ -1,3 +1,6 @@
+/**
+Implement two types of sorting algorithms: Merge sort and bubble sort.
+*/
 package sorting
 
 func BubbleSort(in []int) (out []int) {
