@@ -11,7 +11,9 @@ import (
 func closestInStrip(data []point, min float64) (length float64, closestPair []point) {
 	length = min
 
-	out := data
+	out := make([]point, len(data))
+	copy(out, data)
+
 	sort.Slice(out, func(i, j int) bool {
 		return out[i].y < out[j].y
 	})
@@ -65,10 +67,11 @@ func divide(data []point) (length float64, closestPair []point) {
 }
 
 func planarCase(data []point) (length float64, closestPair []point) {
-	out := data
+	out := make([]point, len(data))
+	copy(out, data)
 
 	sort.Slice(out, func(i, j int) bool {
-		return data[i].x < data[j].x
+		return out[i].x < out[j].x
 	})
 
 	return divide(out)

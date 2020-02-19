@@ -8,7 +8,7 @@ import (
 	"github.com/magmel48/go-projects/utils"
 )
 
-func reverse(in string) (out string) {
+func Reverse(in string) (out string) {
 	for _, c := range in {
 		out = string(c) + out
 	}
@@ -18,5 +18,5 @@ func reverse(in string) (out string) {
 
 func ReverseAString() {
 	text := utils.ReadConsole()
-	fmt.Println(reverse(text))
+	fmt.Println(Reverse(text))
 }
