@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/magmel48/go-projects/text/count_words_in_a_string"
+	"github.com/magmel48/go-projects/security/caesar_cipher"
 	"math/rand"
 	"time"
 )
@@ -9,6 +9,5 @@ import (
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	//closest_pair_problem.ClosestPairProblem()
-	count_words_in_a_string.CountWordsInAString()
+	caesar_cipher.CaesarCipher()
 }
