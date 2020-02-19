@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/magmel48/go-projects/classic_algorithms/closest_pair_problem"
 	"math/rand"
 	"time"
 )
@@ -17,4 +18,5 @@ func main() {
 	//coin_flip_simulation.CoinFlipSimulation()
 	//fast_exponentiation.FastExponentiation()
 	//complex_number_algebra.ComplexNumberAlgebra()
+	closest_pair_problem.ClosestPairProblem()
 }
