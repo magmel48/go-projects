@@ -4,7 +4,8 @@ Implement two types of sorting algorithms: Merge sort and bubble sort.
 package sorting
 
 func BubbleSort(in []int) (out []int) {
-	out = in
+	out = make([]int, len(in))
+	copy(out, in)
 
 	for i := 0; i < len(out); i++ {
 		found := false
