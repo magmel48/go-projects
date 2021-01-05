@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/magmel48/go-projects/security/caesar_cipher"
+	"github.com/magmel48/go-projects/networking/portschecker"
 	"math/rand"
 	"time"
 )
@@ -9,5 +9,5 @@ import (
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	caesar_cipher.CaesarCipher()
+	portschecker.CheckPorts()
 }
